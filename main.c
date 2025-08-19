@@ -6,8 +6,8 @@
 #include <sys/ioctl.h>
 #include <termios.h>
 
-// termios.hにてこいつが定義されてる。(in my env: /usr/include/asm-generic/termios.h)
-//んで予測だが、sys/ioctlでinclude termios.hされてる説あり。
+// /usr/include/bits/ioctl-types.hにてこいつが定義されてる
+// sys/ioctl.hにて、ioctl-types.hがincludeされている。
 /*
 struct winsize {
         unsigned short ws_row;
